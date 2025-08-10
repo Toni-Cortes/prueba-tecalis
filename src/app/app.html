@@ -1,0 +1,49 @@
+<body>
+
+  <main>
+    <!-- A la primera seccion la he llamado 'hero' (dividad en dos divs) y a la segunda, 
+     donde va elcomponente de las pestañas'above-fold' -->
+     <!-- ------------------------------------------------------------------- -->
+    <section class="hero">
+
+      <div class="hero1">
+
+        <img src="./logo.svg" alt="Logo" class="hero-logo" />
+
+        <div class="texto-hero">
+            <h1 class="hero-title">Lorem ipsum dolor sit amet consectetur adipis</h1>
+            <p class="hero-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis adipiscing in turpis luctus ipsum, amet.
+            Risus ac mauris pellentesque nunc nulla accumsan nec. Risus gravida donec tempor feugiat.
+            </p>
+        </div>
+
+         <app-ui-button text="Button"> </app-ui-button> <!-- componente del botón -->
+
+      </div>
+
+      <div class="hero2">
+        <img class="hero-img" src="./img-1.png" alt="movil">
+      </div>
+
+    </section>
+
+    <!-- ------------------------------------------------------------------- -->
+
+    <section class="above-fold"> 
+
+      <!-- Pongo los dos componentes y despues muestro uno u otro segun el tamano de la pantalla,
+       es lo que me se me ocurre a nivel de maquetacion pero es posible que haya una forma 
+       de hacerlo en desarrollo.  -->
+
+      <app-tabs-container [tabTitles]="myTabs"></app-tabs-container>
+      <app-tabs-container-mobile [tabTitles]="myTabs"></app-tabs-container-mobile>
+
+    </section>
+    
+    <!-- ------------------------------------------------------------------- -->
+
+  </main>
+
+
+</body>

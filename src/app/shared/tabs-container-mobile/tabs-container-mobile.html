@@ -1,0 +1,30 @@
+<!-- lo único que cambia en la version movil es que el contenedor 
+ de la pestaña envuelve a la imagen tambien -->
+
+<div class="tabs-component">
+    <div class="tabs-column">
+        <h2>Lorem Ipsum dolor sit amet</h2>
+
+        @for (text of tabTitles; track text; let i = $index) {
+        <div>
+            <div class="tab">
+                <div class="tab-title" [class.active]="activeTabIndex === i" (click)="onTabClick(i)">
+                    <h4>{{ text }}</h4>
+                    @if (activeTabIndex !== i) {
+                    <img src="./chevron-open.png" class="open-chevron"  alt="open chevron">
+                    }
+                    @if (activeTabIndex === i) {
+                    <img src="./chevron-close.png" class="close-chevron"  alt="close chevron">
+                    }
+                </div>
+
+                @if (activeTabIndex === i) {
+                <img src="./img-2.png" alt="imagen de la pestaña">
+                }
+            </div>
+
+
+        </div>
+        }
+    </div>
+</div>

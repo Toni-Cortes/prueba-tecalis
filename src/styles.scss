@@ -1,0 +1,62 @@
+/* Estilos globales */
+:root {
+  --button-color: #46D6DD; 
+  --hover-button-color: #27415C; 
+  --text-button-color: #FFFFFF;
+
+  --button-nav-color: #27415C; 
+  --hover-button-nav-color: #5C9DDC; 
+
+  --link-color: #5C9DDC; 
+  --hover-link-color: #27415C; 
+
+  --tab-color: #DDFFFF;
+  --text-tab-color: #27415C;  
+
+  --border-tab-color:#5C9DDC;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 1920px;
+}
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: '48px';
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;  
+}
+h4{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p{
+    line-height: 26px;
+}
+
+@media (max-width: 960px) {
+  body{
+    margin: 32px;
+}
+
+
+    
+}

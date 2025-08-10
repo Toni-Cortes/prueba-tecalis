@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../../public/Union.png);
+    background-repeat: no-repeat;
+    background-position: top right; 
+    background-size: auto;  
+}
+
+
+.hero, .above-fold{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 64px 32px;
+    column-gap: 80px;
+    margin: auto;
+  
+}
+
+.hero-img{
+    max-width: 648px;
+    min-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+
+.hero-logo{
+    max-width: 82px;
+    margin: 0;
+    padding: 0
+    
+}
+
+.hero1{
+    display: flex;
+    flex-direction: column;
+    max-width: 648px;
+  
+}
+
+.texto-hero{
+  
+    margin-bottom: 64px;
+    margin-top: 64px;
+}
+
+.texto-hero h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 16px;
+    
+}
+.texto-hero p{
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 0;
+  
+}
+
+
+// He anadido un media query intermedio para hacer la transicion 
+// entre desktop y mobile mas flexible
+
+@media (max-width: 960px) { 
+
+    body{
+    background-image: none;
+    text-align: center;
+   }
+
+   .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    gap: 64px;;
+   }
+
+
+   .hero-img{
+    min-width: 200px;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    }
+
+   .hero1{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    max-width: none;
+    gap: 32px;
+   }
+
+   
+  .hero2{
+    margin: 0 auto;
+  
+  }
+
+   .texto-hero{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+   }
+
+   .above-fold{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 64px auto 100px auto;
+   }
+
+}
+
+
+@media (max-width: 431px) {
+  
+
+    .hero-img{
+    min-width: 100px;
+    width: 366px;
+    height: auto;
+    margin: auto;
+    }
+   
+}

@@ -1,0 +1,95 @@
+.tabs-component {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 80px;
+    margin: auto;
+}
+
+.tabs-column {
+    width: 400px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 320px;
+    margin: auto;
+    gap: 16px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+    padding: 0;
+    border-radius: 8px;
+    border: 1px solid var(--border-tab-color);
+    cursor: pointer;
+
+    color: var(--text-tab-color);
+
+    &:hover {
+        background-color: var(--tab-color);
+    }
+}
+
+.tab-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+// tab seleccionada
+.tab-title.active {
+    background-color: var(--tab-color);
+
+}
+
+
+h4 {
+    //he tenido que modificar el estilo global del h4 para cubrir el fondo como sale en figma
+    margin: 0;
+    padding: 20px;
+}
+
+// cambia la clase de css para cambiar el chevron en el evento del clic
+.tab:not(.active) .open-chevron {
+    display: inline-block;
+}
+
+.tab.active .close-chevron {
+    display: block;
+}
+
+
+
+img {
+    width: 100%;
+    margin: auto;
+    border-radius: 18px;
+    max-width: 720px;
+}
+
+.open-chevron,
+.close-chevron {
+    width: 24px;
+    height: 24px;
+    margin: auto 12 px;
+}
+
+@media (max-width: 960px) {
+
+    .tabs-component {
+        display: flex;
+
+    }
+
+    img {
+        margin: 16px;
+        max-width: 334px;
+
+    }
+}

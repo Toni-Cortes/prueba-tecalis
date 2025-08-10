@@ -1,0 +1,60 @@
+//estilo del contenedor
+
+.tabs-component {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    column-gap: 80px;
+    margin: auto;
+}
+
+.tabs-column{
+    width: 400px;
+
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    
+    height: 320px;
+    margin: auto;
+    gap:16px;
+}
+
+//estilo de las pestañas indiviuales
+
+.tab{
+   
+    color: var(--text-tab-color);
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    &:hover {
+    background-color: var(--tab-color);
+    }
+}
+
+//cambio de color cuando se seleccionan
+.active {
+    background-color: var(--tab-color);
+}
+
+
+//estilo de la imagen para darle flexibilidad entre la version movil y desktop
+
+img{
+    width: 100%;
+    margin: auto;
+    border-radius: 18px;
+    max-width: 720px;
+}
+
+// el componente de pestañas de desktop y mobile es diferente, 
+// lo he hecho asi porque el orden de los elementos cambia en figma. 
+
+@media (max-width: 960px) {
+    .tabs-component {
+        display: none
+    }
+}

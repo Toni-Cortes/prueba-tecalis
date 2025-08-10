@@ -1,0 +1,20 @@
+<!-- Componente de las pestañas, iterando con un for al que se le puede pasar un array. 
+ Con la funcionalidad de pestañas activas. -->
+ 
+
+
+<div class="tabs-component">
+
+    <img src="./img-2.png" alt="ordenador portatil">
+
+    <div class="tabs-column">
+        
+        <h2>Lorem Ipsum dolor sit amet</h2>
+        
+            @for (text of tabTitles; track text; let i = $index) {
+                <div class="tab" [class.active]="i === activeTabIndex" (click)="onTabClick(i)" >
+                <h4>{{ text }}</h4>
+                </div>
+            }
+    </div>
+</div>
