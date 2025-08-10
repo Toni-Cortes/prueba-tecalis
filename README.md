@@ -2,7 +2,7 @@
 ## Creado usando:
 'npm install -g @angular/cli' para la instalación
 'ng new landing-maqueta --style=scss --routing=false' para la creacion del poryecto
-'ng g c shared/ui-button --style=scss --skip-tests'para los componentes
+'ng g c shared/ui-button --style=scss --skip-tests' para los componentes
 'ng serve --open' para build en local
 
 ## Estructura:
