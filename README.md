@@ -1,3 +1,25 @@
+
+## Creado usando:
+'npm install -g @angular/cli' para la instalación
+'ng new landing-maqueta --style=scss --routing=false' para la creacion del poryecto
+'ng g c shared/ui-button --style=scss --skip-tests'para los componentes
+'ng serve --open' para build en local
+
+## Estructura:
+  - Componente Principal (landing)
+      - Body
+          - Seccion 1 (Hero)
+              - div1
+                  - Logo, Titulo y Texto
+                  - Componente del botón
+              - div 2
+                  - imagen
+          - Seccion 2
+              - Componente de pestañas
+
+
+
+
 # LandingMaqueta
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
